@@ -8,7 +8,7 @@
 
 n = input("Введите число:")
 
-
+q
 def main(k):
     result = 0
     outstr = ''

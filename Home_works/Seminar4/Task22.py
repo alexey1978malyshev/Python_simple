@@ -15,7 +15,7 @@
 set1 = set()
 set2 = set()
 set1 = {2, 4, 6, 8, 10, 12, 10, 8, 6, 4, 2}
-set2 = {3, 6, 9, 12, 15, 18}
+set2 = {3, 6, 9, 12  , 15, 18}
 set3 = set1.intersection(set2)
 result_string = ""
 result_list = list(set3)
