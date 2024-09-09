@@ -40,8 +40,9 @@ def check_user_pswd():
         if result_check is True:
             print(f'Your password is good! - {input_str}')
 
+if __name__ == '__main__':
+    check_user_pswd()
 
-check_user_pswd()
 
 # s = 'JJeJJ'
 # b = s.upper()
