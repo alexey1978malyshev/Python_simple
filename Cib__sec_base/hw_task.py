@@ -4,7 +4,7 @@
 — наличие цифр
 и переводит его в хэш-значение."""
 
-
+import hashlib
 def check_user_pswd():
     result_check = False
     while result_check is False:
@@ -38,7 +38,10 @@ def check_user_pswd():
             result_check = True
 
         if result_check is True:
-            print(f'Your password is good! - {input_str}')
+            password = bytes(input_str, 'utf-8')
+            hash_passwd=hashlib.sha256(password).hexdigest()
+            print(f'Your password is good! - {input_str}->{hash_passwd}')
+
 
 if __name__ == '__main__':
     check_user_pswd()
